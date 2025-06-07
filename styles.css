@@ -1,8 +1,12 @@
+body{
+  background-color:rgb(248, 200, 140)
+}
 #container {
       width: 220px;
       margin: 50px auto;
       padding: 10px;
       border: 2px solid #ccc;
+      background-color:rgb(16, 88, 244);
       border-radius: 10px;
       font-family: Arial;
     }

@@ -25,3 +25,27 @@ const display = document.getElementById("display");
     display.value = "";
     history.innerText = "";
   }
+  document.addEventListener("keydown", function (event) {
+  const key = event.key;
+
+  // Allow digits, operators, and dot
+  if (/[\d\+\-\*\/\.]/.test(key)) {
+    appendValue(key);
+  }
+
+  // Enter or = to calculate
+  if (key === "Enter" || key === "=") {
+    calculate();
+  }
+
+  // Backspace
+  if (key === "Backspace") {
+    backspace();
+    event.preventDefault(); // Prevent browser navigation
+  }
+
+  // Clear with Escape
+  if (key === "Escape") {
+    clearDisplay();
+  }
+});
