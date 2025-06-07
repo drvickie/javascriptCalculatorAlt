@@ -1,6 +1,10 @@
 const display = document.getElementById("display");
   const history = document.getElementById("history");
 
+  function backspace() {
+  display.value = display.value.slice(0, -1);
+}
+
   function appendValue(val) {
     display.value += val;
   }
