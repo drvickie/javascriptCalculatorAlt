@@ -22,7 +22,7 @@ body{
       width: 100%;
       font-size: 1.5em;
       text-align: right;
-      padding: 10px;
+      padding: auto;
       margin-bottom: 10px;
     }
 
@@ -32,3 +32,4 @@ body{
       font-size: 1.2em;
       margin: 2px;
     }
+      
